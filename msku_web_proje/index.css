@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Metal+Mania");
+
+
+*{
+    box-sizing: border-box;
+    font-family: 'Edu VIC WA NT Beginner', sans-serif;
+    color: #777;
+    
+}
+
+
+html,body{
+
+    margin: 0;
+    padding: 0;
+    
+}
+
+.main-header{
+    
+    background-image: url(images/background1.jfif);
+    background-color:rgba(0,0,0,.2);
+    background-blend-mode: multiply;
+    background-size: cover;
+    padding-bottom: 30px;
+}
+
+.title-name{
+    text-align: center;
+    margin: 0;
+    font-size: 4em;
+    font-family: "Metal Mania";
+    color: white;
+    font-weight: normal;
+
+}
+.title-name-large{
+    font-size: 7em;
+    
+}
+
+.content-section{
+    margin: 1em;
+    flex-direction: column;
+}
+
+.container{
+    max-width: 1150px;
+    margin: 0 auto;
+    flex-direction: column;
+    
+}
+
+.container .content-section{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    margin-bottom: 150px;
+
+}
+
+
+
+.box-1{
+    position: relative;
+    flex: 0.25fr;
+    float: left;
+    height: 100%    
+}
+
+
+
+.box-2{
+    flex: 3.5fr;
+    position: relative;
+    
+}
+
+.box-3{
+    position: relative;
+    flex: 0.25fr;
+    float: right;
+    height: 100%
+}
+
+.box-1, .box-2, .box-3 {
+    border: 1px solid black; 
+    flex-direction: column;
+  }
+
+
+
+.section-header{
+    font-family: "Metal Mania";
+    font-weight: normal;
+    color: 333;
+    text-align: center;
+    font-size: 2em;
+}
+
+
+.main-footer{
+
+    background-image: url(images/background1.jfif);
+    background-color: rgba(0,0,0,.2);
+    bottom: 0;
+    left: 0;
+    width: 100%;
+        
+}
+
+
+.main-footer-container{
+    display: flex;
+    align-items: center;
+}
+
+.main-footer-container li{
+    background-color: rgba(0,0,0,.2)    
+}
+
+h3{
+    text-align: center;
+    margin: 0;
+    font-size: 4em;
+    font-family: "Metal Mania";
+    color: white;
+    font-weight: normal;
+}
+
+
+.music-item{
+    margin: 10px; 
+    padding: 0.5em; 
+}
+
+.music-item-title{
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.music-item-image{
+    height: 250px;
+    
+}
+
+.music-item-details{
+    display: flex;
+    align-items: center;
+    padding: 5px;
+}
+
+.music-item-streams{
+    flex-grow: 1;
+    color: #333;
+}
+
+.music-items{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.main-footer-container li a:hover{
+    font-size: larger;
+    background-color: white;
+}
+
+.music-item-streams{
+    text-align: center;
+}
+
+
+
+
+
+@media (max-width: 768px) {
+    .container .content-section {
+        flex-direction: column;
+        height: auto;
+    }
+ 
+}
+
